@@ -1,0 +1,13 @@
+Extract a substring with a regular expression in PowerShell
+
+string_sample = "[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DNS Server\anyLongString]"
+
+[Code]
+$a = ""
+$a -match '([^\\]*)]$'
+$matches[1]
+[Code]
+
+[Result]
+anyLongString
+[Result]
